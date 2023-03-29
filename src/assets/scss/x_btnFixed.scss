@@ -1,0 +1,16 @@
+.btnFixed {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 1px;
+    margin-bottom: 10px;
+}
+.btnFixed__box {
+}
+.btnFixed__btn {
+    @include btn;
+    width: 100%;
+    text-align: center;
+    padding: 16px 15px;
+}
