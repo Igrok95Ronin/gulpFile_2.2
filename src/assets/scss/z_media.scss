@@ -1,0 +1,11 @@
+@media(max-width: 500px) {
+    .btnFixedD {
+        display: none;
+    }
+    .btnFixed {
+        display: block;
+    }
+    footer {
+        margin-bottom: 60px;
+    }
+}
