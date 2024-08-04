@@ -42,11 +42,47 @@ body{
 }
 
 :root{
-    --btnColorFixed: #000;
     --maxWidth: 1200px;
+    --btnColorFixed: #000;
+    --mainColor: #000
 }
 
-
+@mixin h1Title{
+    font-weight: 700;
+    font-size: clamp(32px, 5vw, 40px);
+    margin: 0;
+}
+@mixin h2Title {
+    font-size: clamp(28px, 5vw, 32px);
+    font-weight: 600;
+    margin: 0;
+}
 @mixin btn {
-
+    background-color: var(--mainColor);
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding: 10px 30px 10px 50px;
+    border-radius: 10px;
+    transition: .3s;
+    span{
+    position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../icons/telephone-fill.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 20px;
+            aspect-ratio: 1;
+            left: -45px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &:hover{
+        background-color: #0f426e;
+        color: #fff;
+    }
 }
