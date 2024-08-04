@@ -41,7 +41,10 @@ body{
     color: #000;
 }
 
-$btnColorFixed : #000;
+:root{
+    --btnColorFixed: #000;
+}
+
 
 @mixin btn {
 

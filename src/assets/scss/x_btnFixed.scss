@@ -10,7 +10,7 @@
 }
 .btnFixed__btn {
     @include btn;
-    background-color: $btnColorFixed;
+    background-color: var(--btnColorFixed);
     width: 100%;
     text-align: center;
     padding: 16px 15px;
@@ -34,7 +34,7 @@
 .btnFixedD__box {
 }
 .btnFixedD__btn {
-    background-color: $btnColorFixed;
+    background-color: var(--btnColorFixed);
     padding: 10px;
     border-radius: 50px;
     width: 38px;
