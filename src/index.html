@@ -62,7 +62,51 @@ $title = $text . ' ' . $city;
                 </div>
             </article>
         </section>
+
         
+        <section id="anchorForm" class='forms'>
+            <div class='forms__wrapper'>
+               <div class='container-fluid'>
+                  <div class='row'>
+                     <div class='col-12 container'>
+                        <div class='forms__box'>
+                           <h2 class='forms__title'>Kontaktieren Sie uns:</h2>
+                           <form id='jq_form' class='mb-0 mt-3'>
+                              <div class='my-0'>
+                                 <input class='form-control' placeholder='Name' name='jq_name' type='text'>
+                                 <div id='jq_name' style='font-weight:700;font-size:15px;color:red;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
+                              </div>
+                              <div class='my-4'>
+                                 <input class='form-control' placeholder='Telefonnummer' name='jq_phone' type='text'>
+                                 <div id='jq_phone' style='font-weight:700;font-size:15px;color:red;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
+                              </div>
+                              <div class='my-4'>
+                                 <input class='form-control' placeholder='Straße' name='jq_street' type='text'>
+                                 <div id='jq_street' style='font-weight:700;font-size:15px;color:red;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
+                              </div>
+                              <div class='my-4'>
+                                 <input class='form-control' placeholder='Postleitzahl/Stadt' name='jq_city' type='text'>
+                                 <div id='jq_city' style='font-weight:700;font-size:15px;color:red;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
+                              </div>
+                              <div class='my-4'>
+                                 <input class='form-control' placeholder='E-mail' name='jq_email' type='text'>
+                                 <div id='jq_email' style='font-weight:700;font-size:15px;color:red;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
+                              </div>
+                              <div class='my-4'>
+                                 <textarea rows='3' class='form-control' name='jq_text' placeholder='Beschreibung'></textarea>
+                                 <div id='jq_text' style='font-weight:700;font-size:15px;color:red;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
+                              </div>
+                              <div>
+                                 <input class='btn  text-uppercase fw-bold mb-0 px-3 py-2 forms__button' type='submit' id='jq_submit' value='Senden'>
+                              </div>
+                              <div id='jq_success' style='display:none'>Vielen Dank für Ihre Anfrage. Unsere Mitarbeiter werden sich in Kürze bei Ihnen melden.</div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+        </section>
         <section class='btnFixedD'>
             <div class='btnFixedD__box'>
                 <a class="btnFixedD__btn" href="<?= $phone_href ?>" ><img class="btnFixedD__img" src="assets/icons/telephone-fill.svg" alt=""></a>
