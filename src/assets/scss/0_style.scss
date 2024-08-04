@@ -23,12 +23,12 @@ a{
     display: inline-block;
 }
 .container {
-    max-width: 1170px;
+    max-width: var(--maxWidth);
     margin: 0 auto;
     padding: 0 15px;
 }
 .containerP0 {
-    max-width: 1170px;
+    max-width: var(--maxWidth);
     margin: 0 auto;
     padding: 0;
 }
@@ -43,6 +43,7 @@ body{
 
 :root{
     --btnColorFixed: #000;
+    --maxWidth: 1200px;
 }
 
 
